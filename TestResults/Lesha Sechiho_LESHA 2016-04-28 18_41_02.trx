@@ -1,0 +1,667 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="19b925a3-425a-4b52-b246-4769b03cedad" name="Lesha Sechiho@LESHA 2016-04-28 18:41:02" runUser="LESHA\Lesha Sechiho" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Параметры тестирования по умолчанию" id="de927fc8-4e39-4c10-ad08-ae84b6c1d83e">
+    <Deployment runDeploymentRoot="Lesha Sechiho_LESHA 2016-04-28 18_41_02">
+      <DeploymentItem filename="P:\Cars\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll" />
+      <DeploymentItem filename="P:\Cars\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll" />
+      <DeploymentItem filename="P:\Cars\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll" />
+      <DeploymentItem filename="P:\Cars\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll" />
+      <DeploymentItem filename="P:\Cars\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll" />
+      <DeploymentItem filename="P:\Cars\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll" />
+      <DeploymentItem filename="P:\Cars\Cars\bin\Cars.dll" />
+      <DeploymentItem filename="P:\Cars\packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll" />
+      <DeploymentItem filename="P:\Cars\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll" />
+      <DeploymentItem filename="P:\Cars\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2016-04-28T18:41:02.2009336+03:00" queuing="2016-04-28T18:41:06.2786303+03:00" start="2016-04-28T18:41:07.1441983+03:00" finish="2016-04-28T18:41:55.1602223+03:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="1" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="LESHA" outcome="Warning" timestamp="2016-04-28T18:41:05.9504122+03:00">
+        <Text>Предупреждение! Ошибка развертывания тестового запуска: не найдена сборка или модуль "WebGrease" с прямой или косвенной ссылкой из тестовый контейнер "p:\cars\cars.tests\bin\debug\cars.tests.dll".</Text>
+      </RunInfo>
+      <RunInfo computerName="LESHA" outcome="Warning" timestamp="2016-04-28T18:41:54.7199296+03:00">
+        <Text>Не удается выполнить нагрузочный тест "LoadTest1" на агенте "LESHA": Требуется эмуляция сети для нагрузочного теста "LoadTest1", но драйвер не установлен на агенте LESHA.
+Требуется эмуляция сети для нагрузочного теста "LoadTest1", но драйвер не установлен на агенте LESHA.</Text>
+        <Exception>Microsoft.VisualStudio.TestTools.WebStress.LoadTestException: Не удается выполнить нагрузочный тест "LoadTest1" на агенте "LESHA": Требуется эмуляция сети для нагрузочного теста "LoadTest1", но драйвер не установлен на агенте LESHA. ---&gt; Microsoft.VisualStudio.TestTools.WebStress.LoadTestException: Требуется эмуляция сети для нагрузочного теста "LoadTest1", но драйвер не установлен на агенте LESHA.
+   в Microsoft.VisualStudio.TestTools.WebStress.WebLoadTestAdapter.VerifyNetworkEmulationIsUsable(WebTestSuite loadTest)
+   в Microsoft.VisualStudio.TestTools.WebStress.WebLoadTestAdapter.VerifySuiteIsReadyToRun(WebTestSuite suite)
+   в Microsoft.VisualStudio.TestTools.WebStress.WebLoadTestAdapter.Prepare(ITestElement testElement)
+   --- Конец трассировки внутреннего стека исключений ---
+   в Microsoft.VisualStudio.TestTools.WebStress.LoadTestControllerPlugin.ProcessAnyOutstandingExeception(Boolean throwException)
+   в Microsoft.VisualStudio.TestTools.WebStress.LoadTestControllerPlugin.MessageSink(TestMessage report)
+   в Microsoft.VisualStudio.TestTools.Controller.ControllerExecution.AgentEventImmediate(String agentName, TestMessage message)</Exception>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestViewDetail_OnTheDate" storage="p:\cars\cars.tests\bin\debug\cars.tests.dll" id="d25e173b-95a8-cf56-f3b9-88a3b5f47c17">
+      <TestMethod codeBase="P:/Cars/Cars.Tests/bin/Debug/Cars.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Cars.Tests.TestHomeControllers, Cars.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestViewDetail_OnTheDate" />
+    </UnitTest>
+    <UnitTest name="Test_GetMakers" storage="p:\cars\cars.tests\bin\debug\cars.tests.dll" id="82f268de-a6dc-d5bf-2b02-3b08a009ef1d">
+      <TestMethod codeBase="P:/Cars/Cars.Tests/bin/Debug/Cars.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Cars.Tests.TestHomeControllersJSON, Cars.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_GetMakers" />
+    </UnitTest>
+    <UnitTest name="Test_GetProductOnId_ReadProductId" storage="p:\cars\cars.tests\bin\debug\cars.tests.dll" id="67dab999-3a7e-e541-eae4-d06aa152f31d">
+      <TestMethod codeBase="P:/Cars/Cars.Tests/bin/Debug/Cars.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Cars.Tests.TestClassReadSqlServer, Cars.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_GetProductOnId_ReadProductId" />
+    </UnitTest>
+    <UnitTest name="Test_CarsModelItem" storage="p:\cars\cars.tests\bin\debug\cars.tests.dll" id="3979764e-435d-ae48-cd6e-e26f96e1bf4b">
+      <TestMethod codeBase="P:/Cars/Cars.Tests/bin/Debug/Cars.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Cars.Tests.TestHomeControllersJSON, Cars.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_CarsModelItem" />
+    </UnitTest>
+    <UnitTest name="Test_GetMakersProduct_ReadMakers" storage="p:\cars\cars.tests\bin\debug\cars.tests.dll" id="57550a78-d69b-a3bc-0cd3-e85ab7cc935a">
+      <TestMethod codeBase="P:/Cars/Cars.Tests/bin/Debug/Cars.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Cars.Tests.TestClassReadSqlServer, Cars.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_GetMakersProduct_ReadMakers" />
+    </UnitTest>
+    <UnitTest name="TestViewDetail_OnTheNoDate" storage="p:\cars\cars.tests\bin\debug\cars.tests.dll" id="9643daa3-75d2-452a-8831-d3465be7df41">
+      <TestMethod codeBase="P:/Cars/Cars.Tests/bin/Debug/Cars.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Cars.Tests.TestHomeControllers, Cars.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestViewDetail_OnTheNoDate" />
+    </UnitTest>
+    <UnitTest name="Test_GetProductN_ReadProductInfosNumber" storage="p:\cars\cars.tests\bin\debug\cars.tests.dll" id="f492940d-b111-6131-4f83-dac8e31903fa">
+      <TestMethod codeBase="P:/Cars/Cars.Tests/bin/Debug/Cars.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Cars.Tests.TestClassReadSqlServer, Cars.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_GetProductN_ReadProductInfosNumber" />
+    </UnitTest>
+    <UnitTest name="Test_GetProductDate" storage="p:\cars\cars.tests\bin\debug\cars.tests.dll" id="46e03b91-5f56-8154-fcb8-66641916ba5c">
+      <TestMethod codeBase="P:/Cars/Cars.Tests/bin/Debug/Cars.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Cars.Tests.TestHomeControllersJSON, Cars.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_GetProductDate" />
+    </UnitTest>
+    <UnitTest name="Test_GetCountProduct" storage="p:\cars\cars.tests\bin\debug\cars.tests.dll" id="fb1f7323-2f64-468f-838a-471c8d63b9c5">
+      <TestMethod codeBase="P:/Cars/Cars.Tests/bin/Debug/Cars.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Cars.Tests.TestHomeControllersJSON, Cars.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_GetCountProduct" />
+    </UnitTest>
+    <LoadTest Name="LoadTest1" Description="" Owner="" storage="p:\cars\cars.tests\loadtest1.loadtest" Priority="2147483647" Enabled="true" CssProjectStructure="" CssIteration="" DeploymentItemsEditable="" WorkItemIds="" TraceLevel="None" CurrentRunConfig="Параметры запуска1" Id="06126d46-43e8-4bc1-bee0-a705aec1d3d1">
+      <Scenarios>
+        <Scenario Name="Сценарий1" DelayBetweenIterations="3" PercentNewUsers="0" IPSwitching="true" TestMixType="PercentageOfTestsStarted" ApplyDistributionToPacingDelay="true" MaxTestIterations="0" DisableDuringWarmup="false" DelayStartTime="0" AllowedAgents="">
+          <ThinkProfile Value="0.2" Pattern="NormalDistribution" />
+          <LoadProfile Pattern="Step" InitialUsers="10" MaxUsers="200" StepUsers="5" StepDuration="5" StepRampTime="0" />
+          <TestMix>
+            <TestProfile Name="Test_CarsModelItem" Path="p:\cars\cars.tests\bin\debug\cars.tests.dll" Id="3979764e-435d-ae48-cd6e-e26f96e1bf4b" Percentage="1" Type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+            <TestProfile Name="Test_GetCountProduct" Path="p:\cars\cars.tests\bin\debug\cars.tests.dll" Id="fb1f7323-2f64-468f-838a-471c8d63b9c5" Percentage="1" Type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+            <TestProfile Name="Test_GetCountProduct_ReadCountProductInfos" Path="p:\cars\cars.tests\bin\debug\cars.tests.dll" Id="3314af23-5568-8e41-fdc6-531833456d96" Percentage="1" Type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+            <TestProfile Name="Test_GetMainInfo_ReadMainInfoCars" Path="p:\cars\cars.tests\bin\debug\cars.tests.dll" Id="14216afd-b447-844d-7c1d-a1dd2df50dc9" Percentage="4" Type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+            <TestProfile Name="Test_GetMakers" Path="p:\cars\cars.tests\bin\debug\cars.tests.dll" Id="82f268de-a6dc-d5bf-2b02-3b08a009ef1d" Percentage="3" Type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+            <TestProfile Name="Test_GetMakersProduct_ReadMakers" Path="p:\cars\cars.tests\bin\debug\cars.tests.dll" Id="57550a78-d69b-a3bc-0cd3-e85ab7cc935a" Percentage="3" Type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+            <TestProfile Name="Test_GetModelsProduct_ReadModels" Path="p:\cars\cars.tests\bin\debug\cars.tests.dll" Id="66648f28-1324-d1c2-44a7-470ff11284cb" Percentage="6" Type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+            <TestProfile Name="Test_GetProduct_ReadProductInfos" Path="p:\cars\cars.tests\bin\debug\cars.tests.dll" Id="501ae83f-aa8d-9076-a5fc-58ac47aeb249" Percentage="6" Type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+            <TestProfile Name="Test_GetProductDate" Path="p:\cars\cars.tests\bin\debug\cars.tests.dll" Id="46e03b91-5f56-8154-fcb8-66641916ba5c" Percentage="18" Type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+            <TestProfile Name="Test_GetProductDateNumber" Path="p:\cars\cars.tests\bin\debug\cars.tests.dll" Id="247870e5-0a6c-0c91-d605-7f2a3fa6b44e" Percentage="17" Type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+            <TestProfile Name="Test_GetProductN_ReadProductInfosNumber" Path="p:\cars\cars.tests\bin\debug\cars.tests.dll" Id="f492940d-b111-6131-4f83-dac8e31903fa" Percentage="5" Type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+            <TestProfile Name="Test_GetProductOnId_ReadProductId" Path="p:\cars\cars.tests\bin\debug\cars.tests.dll" Id="67dab999-3a7e-e541-eae4-d06aa152f31d" Percentage="5" Type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+            <TestProfile Name="Test_MakerInCar" Path="p:\cars\cars.tests\bin\debug\cars.tests.dll" Id="e9b46095-a60a-2dab-c3c8-d0031636714c" Percentage="5" Type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+            <TestProfile Name="TestViewAbout" Path="p:\cars\cars.tests\bin\debug\cars.tests.dll" Id="70007e13-d477-e5be-1e22-cf1773616819" Percentage="5" Type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+            <TestProfile Name="TestViewCars" Path="p:\cars\cars.tests\bin\debug\cars.tests.dll" Id="96937f62-8550-51bb-56db-c3baa1b2e1ad" Percentage="5" Type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+            <TestProfile Name="TestViewDetail_OnTheDate" Path="p:\cars\cars.tests\bin\debug\cars.tests.dll" Id="d25e173b-95a8-cf56-f3b9-88a3b5f47c17" Percentage="5" Type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+            <TestProfile Name="TestViewDetail_OnTheNoDate" Path="p:\cars\cars.tests\bin\debug\cars.tests.dll" Id="9643daa3-75d2-452a-8831-d3465be7df41" Percentage="5" Type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+            <TestProfile Name="TestViewIndex" Path="p:\cars\cars.tests\bin\debug\cars.tests.dll" Id="436915af-7688-78bf-28ee-3a67dbe268f9" Percentage="5" Type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+          </TestMix>
+          <NetworkMix>
+            <NetworkProfile Percentage="70">
+              <Network Name="LAN" BandwidthInKbps="1000000" NetworkProfileConfigurationXml="&lt;Emulation&gt;&lt;VirtualChannel name=&quot;defaultChannel&quot;&gt;&lt;FilterList/&gt;&lt;VirtualLink instances=&quot;1&quot; name=&quot;defaultLink&quot;&gt;&lt;LinkRule dir=&quot;upstream&quot;&gt;&lt;Bandwidth&gt;&lt;Speed unit=&quot;kbps&quot;&gt;1000000&lt;/Speed&gt;&lt;/Bandwidth&gt;&lt;/LinkRule&gt;&lt;LinkRule dir=&quot;downstream&quot;&gt;&lt;Bandwidth&gt;&lt;Speed unit=&quot;kbps&quot;&gt;1000000&lt;/Speed&gt;&lt;/Bandwidth&gt;&lt;/LinkRule&gt;&lt;/VirtualLink&gt;&lt;/VirtualChannel&gt;&lt;/Emulation&gt;" />
+            </NetworkProfile>
+            <NetworkProfile Percentage="30">
+              <Network Name="3G" BandwidthInKbps="NaN" NetworkProfileConfigurationXml="&lt;Emulation xmlns=&quot;http://microsoft.com/schemas/VisualStudio/TeamTest/2010&quot;&gt;&lt;VirtualChannel name=&quot;ThreeG-Channel1&quot;&gt;&lt;FilterList /&gt;&lt;VirtualLink instances=&quot;1&quot; name=&quot;link1&quot;&gt;&lt;LinkRule dir=&quot;upstream&quot;&gt;&lt;Bandwidth&gt;&lt;Speed unit=&quot;kbps&quot;&gt;512&lt;/Speed&gt;&lt;QueueManagement&gt;&lt;NormalQueue&gt;&lt;Size&gt;100&lt;/Size&gt;&lt;QueueMode&gt;packet&lt;/QueueMode&gt;&lt;DropType&gt;DropTail&lt;/DropType&gt;&lt;/NormalQueue&gt;&lt;/QueueManagement&gt;&lt;/Bandwidth&gt;&lt;Latency&gt;&lt;Fixed&gt;&lt;Time unit=&quot;msec&quot;&gt;150&lt;/Time&gt;&lt;/Fixed&gt;&lt;/Latency&gt;&lt;Loss&gt;&lt;Random&gt;&lt;Rate&gt;0.0025&lt;/Rate&gt;&lt;/Random&gt;&lt;/Loss&gt;&lt;/LinkRule&gt;&lt;LinkRule dir=&quot;downstream&quot;&gt;&lt;Bandwidth&gt;&lt;Speed unit=&quot;kbps&quot;&gt;64&lt;/Speed&gt;&lt;QueueManagement&gt;&lt;NormalQueue&gt;&lt;Size&gt;100&lt;/Size&gt;&lt;QueueMode&gt;packet&lt;/QueueMode&gt;&lt;DropType&gt;DropTail&lt;/DropType&gt;&lt;/NormalQueue&gt;&lt;/QueueManagement&gt;&lt;/Bandwidth&gt;&lt;Latency&gt;&lt;Fixed&gt;&lt;Time unit=&quot;msec&quot;&gt;150&lt;/Time&gt;&lt;/Fixed&gt;&lt;/Latency&gt;&lt;Loss&gt;&lt;Random&gt;&lt;Rate&gt;0.0025&lt;/Rate&gt;&lt;/Random&gt;&lt;/Loss&gt;&lt;/LinkRule&gt;&lt;/VirtualLink&gt;&lt;/VirtualChannel&gt;&lt;/Emulation&gt;" />
+            </NetworkProfile>
+          </NetworkMix>
+        </Scenario>
+      </Scenarios>
+      <CounterSets>
+        <CounterSet Name="LESHA" CounterSetType="LoadTest" LocId="">
+          <CounterCategories>
+            <CounterCategory Name="LoadTest:Scenario">
+              <Counters>
+                <Counter Name="User Load" HigherIsBetter="true" />
+                <Counter Name="Tests Running" HigherIsBetter="true" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="LoadTest:Test">
+              <Counters>
+                <Counter Name="Total Tests" HigherIsBetter="true" />
+                <Counter Name="Passed Tests" HigherIsBetter="true" />
+                <Counter Name="Failed Tests" />
+                <Counter Name="Tests/Sec" HigherIsBetter="true" />
+                <Counter Name="Passed Tests/Sec" HigherIsBetter="true" />
+                <Counter Name="Failed Tests/Sec" />
+                <Counter Name="Avg. Requests/Test" HigherIsBetter="true" />
+                <Counter Name="Avg. Test Time" />
+                <Counter Name="% Time in LoadTestPlugin" />
+                <Counter Name="% Time in WebTest code" />
+                <Counter Name="% Time in Rules" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="LoadTest:Transaction">
+              <Counters>
+                <Counter Name="Total Transactions" HigherIsBetter="true" />
+                <Counter Name="Avg. Transaction Time" />
+                <Counter Name="Avg. Response Time" />
+                <Counter Name="Transactions/Sec" HigherIsBetter="true" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="LoadTest:Errors">
+              <Counters>
+                <Counter Name="Http Errors" />
+                <Counter Name="Validation Rule Errors" />
+                <Counter Name="Extraction Rule Errors" />
+                <Counter Name="Requests Timed Out" />
+                <Counter Name="Exceptions" />
+                <Counter Name="Total Errors" />
+                <Counter Name="Ошибок в секунду" />
+                <Counter Name="Нарушений порога/сек" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="LoadTest:Page">
+              <Counters>
+                <Counter Name="Total Pages" HigherIsBetter="true" />
+                <Counter Name="Avg. Page Time" />
+                <Counter Name="Page Response Time Goal" HigherIsBetter="true" />
+                <Counter Name="% Pages Meeting Goal" HigherIsBetter="true" />
+                <Counter Name="Pages/Sec" HigherIsBetter="true" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="LoadTest:Request">
+              <Counters>
+                <Counter Name="Total Requests" HigherIsBetter="true" />
+                <Counter Name="Passed Requests" HigherIsBetter="true" />
+                <Counter Name="Failed Requests" />
+                <Counter Name="Cached Requests" HigherIsBetter="true" />
+                <Counter Name="Requests/Sec" HigherIsBetter="true" />
+                <Counter Name="Passed Requests/Sec" HigherIsBetter="true" />
+                <Counter Name="Failed Requests/Sec" />
+                <Counter Name="Avg. First Byte Time" />
+                <Counter Name="Avg. Response Time" />
+                <Counter Name="Avg. Connection Wait Time">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareCounters, Microsoft.VisualStudio.QualityTools.LoadTest, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                      <RuleParameters>
+                        <RuleParameter Name="DependentCategory" Value="LoadTest:Page" />
+                        <RuleParameter Name="DependentCounter" Value="Avg. Page Time" />
+                        <RuleParameter Name="DependentInstance" Value="_Total" />
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="0.25" />
+                        <RuleParameter Name="CriticalThreshold" Value="0.5" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="Avg. Content Length" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="LoadTest:LogEntries">
+              <Counters>
+                <Counter Name="Total Log Entries" />
+                <Counter Name="Log Entries/Sec" />
+              </Counters>
+            </CounterCategory>
+          </CounterCategories>
+        </CounterSet>
+        <CounterSet Name="Контроллер" CounterSetType="Controller" LocId="CounterSet_Controller">
+          <CounterCategories>
+            <CounterCategory Name="Memory">
+              <Counters>
+                <Counter Name="% Committed Bytes In Use" Range="100" />
+                <Counter Name="Available MBytes" RangeGroup="Memory Bytes" HigherIsBetter="true">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="False" />
+                        <RuleParameter Name="WarningThreshold" Value="100" />
+                        <RuleParameter Name="CriticalThreshold" Value="50" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="False" />
+                        <RuleParameter Name="WarningThreshold" Value="100" />
+                        <RuleParameter Name="CriticalThreshold" Value="50" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="Page Faults/sec" />
+                <Counter Name="Pages/sec" />
+                <Counter Name="Pool Paged Bytes" RangeGroup="Memory Bytes" />
+                <Counter Name="Pool Nonpaged bytes" RangeGroup="Memory Bytes" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="Network Interface">
+              <Counters>
+                <Counter Name="Bytes Received/sec" RangeGroup="Network Bytes" />
+                <Counter Name="Bytes Sent/sec" RangeGroup="Network Bytes" />
+                <Counter Name="Output Queue Length">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="1.5" />
+                        <RuleParameter Name="CriticalThreshold" Value="2" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="1.5" />
+                        <RuleParameter Name="CriticalThreshold" Value="2" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="Packets Received/sec" RangeGroup="Network Packets" />
+                <Counter Name="Packets Sent/sec" RangeGroup="Network Packets" />
+                <Counter Name="Current Bandwidth" RangeGroup="Network Bytes" />
+                <Counter Name="Bytes Total/sec" RangeGroup="Network Bytes">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareCounters, Microsoft.VisualStudio.QualityTools.LoadTest, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                      <RuleParameters>
+                        <RuleParameter Name="DependentCategory" Value="Network Interface" />
+                        <RuleParameter Name="DependentCounter" Value="Current Bandwidth" />
+                        <RuleParameter Name="DependentInstance" Value="" />
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="0.6" />
+                        <RuleParameter Name="CriticalThreshold" Value="0.7" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareCounters, Microsoft.VisualStudio.QualityTools.LoadTest, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                      <RuleParameters>
+                        <RuleParameter Name="DependentCategory" Value="Network Interface" />
+                        <RuleParameter Name="DependentCounter" Value="Current Bandwidth" />
+                        <RuleParameter Name="DependentInstance" Value="" />
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="0.6" />
+                        <RuleParameter Name="CriticalThreshold" Value="0.7" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+              </Counters>
+              <Instances>
+                <Instance Name="*" />
+              </Instances>
+            </CounterCategory>
+            <CounterCategory Name="PhysicalDisk">
+              <Counters>
+                <Counter Name="% Disk Read Time" Range="100" />
+                <Counter Name="% Disk Time" Range="100" />
+                <Counter Name="% Disk Write Time" Range="100" />
+                <Counter Name="% Idle Time" Range="100" HigherIsBetter="true">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="False" />
+                        <RuleParameter Name="WarningThreshold" Value="40" />
+                        <RuleParameter Name="CriticalThreshold" Value="20" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="False" />
+                        <RuleParameter Name="WarningThreshold" Value="40" />
+                        <RuleParameter Name="CriticalThreshold" Value="20" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="Avg. Disk Bytes/Read" RangeGroup="DiskBytesRate" />
+                <Counter Name="Avg. Disk Bytes/Transfer" RangeGroup="DiskBytesRate" />
+                <Counter Name="Avg. Disk Bytes/Write" RangeGroup="DiskBytesRate" />
+                <Counter Name="Avg. Disk Queue Length" RangeGroup="Disk Queue Length" />
+                <Counter Name="Avg. Disk Read Queue Length" RangeGroup="Disk Queue Length" />
+                <Counter Name="Avg. Disk Write Queue Length" RangeGroup="Disk Queue Length" />
+                <Counter Name="Current Disk Queue Length" RangeGroup="Disk Queue Length" />
+                <Counter Name="Avg. Disk sec/Read" RangeGroup="Disk sec" />
+                <Counter Name="Avg. Disk sec/Transfer" RangeGroup="Disk sec" />
+                <Counter Name="Avg. Disk sec/Write" RangeGroup="Disk sec" />
+                <Counter Name="Disk Bytes/sec" RangeGroup="Disk Bytes sec" />
+                <Counter Name="Disk Read Bytes/sec" RangeGroup="Disk Bytes sec" />
+                <Counter Name="Disk Reads/sec" RangeGroup="Disk Transfers sec" />
+                <Counter Name="Disk Transfers/sec" RangeGroup="Disk Transfers sec" />
+                <Counter Name="Disk Write Bytes/sec" RangeGroup="Disk Bytes sec" />
+                <Counter Name="Disk Writes/sec" RangeGroup="Disk Transfers sec" />
+                <Counter Name="Split IO/Sec" RangeGroup="Disk Transfers sec" />
+              </Counters>
+              <Instances>
+                <Instance Name="*" />
+              </Instances>
+            </CounterCategory>
+            <CounterCategory Name="Processor">
+              <Counters>
+                <Counter Name="% Processor Time" Range="100">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="75" />
+                        <RuleParameter Name="CriticalThreshold" Value="90" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="75" />
+                        <RuleParameter Name="CriticalThreshold" Value="90" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="% Privileged Time" Range="100" />
+                <Counter Name="% User Time" Range="100" />
+              </Counters>
+              <Instances>
+                <Instance Name="_Total" />
+              </Instances>
+            </CounterCategory>
+            <CounterCategory Name="System">
+              <Counters>
+                <Counter Name="Context Switches/sec" />
+                <Counter Name="Processes" />
+                <Counter Name="Processor Queue Length" />
+                <Counter Name="Threads" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="Process">
+              <Counters>
+                <Counter Name="% Processor Time" RangeGroup="Processor Time" />
+                <Counter Name="% Privileged Time" RangeGroup="Processor Time" />
+                <Counter Name="% User Time" RangeGroup="Processor Time" />
+                <Counter Name="Handle Count" />
+                <Counter Name="Thread Count" />
+                <Counter Name="Private Bytes" RangeGroup="Memory Bytes" />
+                <Counter Name="Virtual Bytes" RangeGroup="Memory Bytes" />
+                <Counter Name="Working Set" RangeGroup="Memory Bytes" />
+              </Counters>
+              <Instances>
+                <Instance Name="QTController" />
+              </Instances>
+            </CounterCategory>
+          </CounterCategories>
+          <DefaultCountersForAutomaticGraphs>
+            <DefaultCounter CategoryName="Processor" CounterName="% Processor Time" InstanceName="_Total" GraphName="" />
+            <DefaultCounter CategoryName="Memory" CounterName="Available MBytes" InstanceName="" GraphName="" />
+          </DefaultCountersForAutomaticGraphs>
+        </CounterSet>
+        <CounterSet Name="Агент" CounterSetType="Agent" LocId="CounterSet_Agent">
+          <CounterCategories>
+            <CounterCategory Name="Memory">
+              <Counters>
+                <Counter Name="% Committed Bytes In Use" Range="100" />
+                <Counter Name="Available MBytes" RangeGroup="Memory Bytes" HigherIsBetter="true">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="False" />
+                        <RuleParameter Name="WarningThreshold" Value="100" />
+                        <RuleParameter Name="CriticalThreshold" Value="50" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="Page Faults/sec" />
+                <Counter Name="Pages/sec" />
+                <Counter Name="Pool Paged Bytes" RangeGroup="Memory Bytes" />
+                <Counter Name="Pool Nonpaged bytes" RangeGroup="Memory Bytes" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="Network Interface">
+              <Counters>
+                <Counter Name="Bytes Received/sec" RangeGroup="Network Bytes" />
+                <Counter Name="Bytes Sent/sec" RangeGroup="Network Bytes" />
+                <Counter Name="Output Queue Length">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="1.5" />
+                        <RuleParameter Name="CriticalThreshold" Value="2" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="Packets Received/sec" RangeGroup="Network Packets" />
+                <Counter Name="Packets Sent/sec" RangeGroup="Network Packets" />
+                <Counter Name="Current Bandwidth" RangeGroup="Network Bytes" />
+                <Counter Name="Bytes Total/sec" RangeGroup="Network Bytes">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareCounters, Microsoft.VisualStudio.QualityTools.LoadTest, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+                      <RuleParameters>
+                        <RuleParameter Name="DependentCategory" Value="Network Interface" />
+                        <RuleParameter Name="DependentCounter" Value="Current Bandwidth" />
+                        <RuleParameter Name="DependentInstance" Value="" />
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="0.6" />
+                        <RuleParameter Name="CriticalThreshold" Value="0.7" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+              </Counters>
+              <Instances>
+                <Instance Name="*" />
+              </Instances>
+            </CounterCategory>
+            <CounterCategory Name="PhysicalDisk">
+              <Counters>
+                <Counter Name="% Disk Read Time" Range="100" />
+                <Counter Name="% Disk Time" Range="100" />
+                <Counter Name="% Disk Write Time" Range="100" />
+                <Counter Name="% Idle Time" Range="100" HigherIsBetter="true">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="False" />
+                        <RuleParameter Name="WarningThreshold" Value="40" />
+                        <RuleParameter Name="CriticalThreshold" Value="20" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="Avg. Disk Bytes/Read" RangeGroup="DiskBytesRate" />
+                <Counter Name="Avg. Disk Bytes/Transfer" RangeGroup="DiskBytesRate" />
+                <Counter Name="Avg. Disk Bytes/Write" RangeGroup="DiskBytesRate" />
+                <Counter Name="Avg. Disk Queue Length" RangeGroup="Disk Queue Length" />
+                <Counter Name="Avg. Disk Read Queue Length" RangeGroup="Disk Queue Length" />
+                <Counter Name="Avg. Disk Write Queue Length" RangeGroup="Disk Queue Length" />
+                <Counter Name="Current Disk Queue Length" RangeGroup="Disk Queue Length" />
+                <Counter Name="Avg. Disk sec/Read" RangeGroup="Disk sec" />
+                <Counter Name="Avg. Disk sec/Transfer" RangeGroup="Disk sec" />
+                <Counter Name="Avg. Disk sec/Write" RangeGroup="Disk sec" />
+                <Counter Name="Disk Bytes/sec" RangeGroup="Disk Bytes sec" />
+                <Counter Name="Disk Read Bytes/sec" RangeGroup="Disk Bytes sec" />
+                <Counter Name="Disk Reads/sec" RangeGroup="Disk Transfers sec" />
+                <Counter Name="Disk Transfers/sec" RangeGroup="Disk Transfers sec" />
+                <Counter Name="Disk Write Bytes/sec" RangeGroup="Disk Bytes sec" />
+                <Counter Name="Disk Writes/sec" RangeGroup="Disk Transfers sec" />
+                <Counter Name="Split IO/Sec" RangeGroup="Disk Transfers sec" />
+              </Counters>
+              <Instances>
+                <Instance Name="*" />
+              </Instances>
+            </CounterCategory>
+            <CounterCategory Name="Processor">
+              <Counters>
+                <Counter Name="% Processor Time" Range="100">
+                  <ThresholdRules>
+                    <ThresholdRule Classname="Microsoft.VisualStudio.TestTools.WebStress.Rules.ThresholdRuleCompareConstant, Microsoft.VisualStudio.QualityTools.LoadTest">
+                      <RuleParameters>
+                        <RuleParameter Name="AlertIfOver" Value="True" />
+                        <RuleParameter Name="WarningThreshold" Value="75" />
+                        <RuleParameter Name="CriticalThreshold" Value="90" />
+                      </RuleParameters>
+                    </ThresholdRule>
+                  </ThresholdRules>
+                </Counter>
+                <Counter Name="% Privileged Time" Range="100" />
+                <Counter Name="% User Time" Range="100" />
+              </Counters>
+              <Instances>
+                <Instance Name="0" />
+                <Instance Name="_Total" />
+              </Instances>
+            </CounterCategory>
+            <CounterCategory Name="System">
+              <Counters>
+                <Counter Name="Context Switches/sec" />
+                <Counter Name="Processes" />
+                <Counter Name="Processor Queue Length" />
+                <Counter Name="Threads" />
+              </Counters>
+            </CounterCategory>
+            <CounterCategory Name="Process">
+              <Counters>
+                <Counter Name="% Processor Time" RangeGroup="Processor Time" />
+                <Counter Name="% Privileged Time" RangeGroup="Processor Time" />
+                <Counter Name="% User Time" RangeGroup="Processor Time" />
+                <Counter Name="Handle Count" />
+                <Counter Name="Thread Count" />
+                <Counter Name="Private Bytes" RangeGroup="Memory Bytes" />
+                <Counter Name="Virtual Bytes" RangeGroup="Memory Bytes" />
+                <Counter Name="Working Set" RangeGroup="Memory Bytes" />
+              </Counters>
+              <Instances>
+                <Instance Name="devenv" />
+                <Instance Name="QTAgentService" />
+                <Instance Name="QTAgent" />
+                <Instance Name="QTAgent32" />
+                <Instance Name="QTDCAgent" />
+                <Instance Name="QTDCAgent32" />
+              </Instances>
+            </CounterCategory>
+          </CounterCategories>
+          <DefaultCountersForAutomaticGraphs>
+            <DefaultCounter CategoryName="Processor" CounterName="% Processor Time" InstanceName="0" GraphName="" RunType="Local" />
+            <DefaultCounter CategoryName="Processor" CounterName="% Processor Time" InstanceName="_Total" GraphName="" RunType="Remote" />
+            <DefaultCounter CategoryName="Memory" CounterName="Available MBytes" InstanceName="" GraphName="" />
+          </DefaultCountersForAutomaticGraphs>
+        </CounterSet>
+      </CounterSets>
+      <RunConfigurations>
+        <RunConfiguration Name="Параметры запуска1" Description="" ResultsStoreType="Database" TimingDetailsStorage="AllIndividualDetails" SaveTestLogsOnError="true" SaveTestLogsFrequency="0" MaxErrorDetails="200" MaxErrorsPerType="1000" MaxThresholdViolations="1000" MaxRequestUrlsReported="1000" UseTestIterations="false" RunDuration="600" WarmupTime="60" CoolDownTime="0" TestIterations="100" WebTestConnectionModel="ConnectionPerUser" WebTestConnectionPoolSize="50" SampleRate="5" ValidationLevel="High" SqlTracingConnectString="" SqlTracingConnectStringDisplayValue="" SqlTracingDirectory="" SqlTracingEnabled="false" SqlTracingFileCount="2" SqlTracingRolloverEnabled="true" SqlTracingMinimumDuration="500" RunUnitTestsInAppDomain="true" RigType="Small">
+          <CounterSetMappings>
+            <CounterSetMapping ComputerName="[CONTROLLER MACHINE]">
+              <CounterSetReferences>
+                <CounterSetReference CounterSetName="LoadTest" />
+                <CounterSetReference CounterSetName="Контроллер" />
+              </CounterSetReferences>
+            </CounterSetMapping>
+            <CounterSetMapping ComputerName="[AGENT MACHINES]">
+              <CounterSetReferences>
+                <CounterSetReference CounterSetName="Агент" />
+              </CounterSetReferences>
+            </CounterSetMapping>
+          </CounterSetMappings>
+        </RunConfiguration>
+      </RunConfigurations>
+    </LoadTest>
+    <UnitTest name="TestViewCars" storage="p:\cars\cars.tests\bin\debug\cars.tests.dll" id="96937f62-8550-51bb-56db-c3baa1b2e1ad">
+      <TestMethod codeBase="P:/Cars/Cars.Tests/bin/Debug/Cars.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Cars.Tests.TestHomeControllers, Cars.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestViewCars" />
+    </UnitTest>
+    <UnitTest name="Test_MakerInCar" storage="p:\cars\cars.tests\bin\debug\cars.tests.dll" id="e9b46095-a60a-2dab-c3c8-d0031636714c">
+      <TestMethod codeBase="P:/Cars/Cars.Tests/bin/Debug/Cars.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Cars.Tests.TestHomeControllersJSON, Cars.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_MakerInCar" />
+    </UnitTest>
+    <UnitTest name="Test_GetCountProduct_ReadCountProductInfos" storage="p:\cars\cars.tests\bin\debug\cars.tests.dll" id="3314af23-5568-8e41-fdc6-531833456d96">
+      <TestMethod codeBase="P:/Cars/Cars.Tests/bin/Debug/Cars.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Cars.Tests.TestClassReadSqlServer, Cars.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_GetCountProduct_ReadCountProductInfos" />
+    </UnitTest>
+    <UnitTest name="Test_GetModelsProduct_ReadModels" storage="p:\cars\cars.tests\bin\debug\cars.tests.dll" id="66648f28-1324-d1c2-44a7-470ff11284cb">
+      <TestMethod codeBase="P:/Cars/Cars.Tests/bin/Debug/Cars.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Cars.Tests.TestClassReadSqlServer, Cars.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_GetModelsProduct_ReadModels" />
+    </UnitTest>
+    <UnitTest name="Test_GetProductDateNumber" storage="p:\cars\cars.tests\bin\debug\cars.tests.dll" id="247870e5-0a6c-0c91-d605-7f2a3fa6b44e">
+      <TestMethod codeBase="P:/Cars/Cars.Tests/bin/Debug/Cars.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Cars.Tests.TestHomeControllersJSON, Cars.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_GetProductDateNumber" />
+    </UnitTest>
+    <UnitTest name="TestViewIndex" storage="p:\cars\cars.tests\bin\debug\cars.tests.dll" id="436915af-7688-78bf-28ee-3a67dbe268f9">
+      <TestMethod codeBase="P:/Cars/Cars.Tests/bin/Debug/Cars.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Cars.Tests.TestHomeControllers, Cars.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestViewIndex" />
+    </UnitTest>
+    <UnitTest name="Test_GetProduct_ReadProductInfos" storage="p:\cars\cars.tests\bin\debug\cars.tests.dll" id="501ae83f-aa8d-9076-a5fc-58ac47aeb249">
+      <TestMethod codeBase="P:/Cars/Cars.Tests/bin/Debug/Cars.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Cars.Tests.TestClassReadSqlServer, Cars.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_GetProduct_ReadProductInfos" />
+    </UnitTest>
+    <UnitTest name="TestViewAbout" storage="p:\cars\cars.tests\bin\debug\cars.tests.dll" id="70007e13-d477-e5be-1e22-cf1773616819">
+      <TestMethod codeBase="P:/Cars/Cars.Tests/bin/Debug/Cars.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Cars.Tests.TestHomeControllers, Cars.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestViewAbout" />
+    </UnitTest>
+    <UnitTest name="Test_GetMainInfo_ReadMainInfoCars" storage="p:\cars\cars.tests\bin\debug\cars.tests.dll" id="14216afd-b447-844d-7c1d-a1dd2df50dc9">
+      <TestMethod codeBase="P:/Cars/Cars.Tests/bin/Debug/Cars.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Cars.Tests.TestClassReadSqlServer, Cars.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Test_GetMainInfo_ReadMainInfoCars" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Отсутствующие в списке результаты" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry isTransparent="false" testId="06126d46-43e8-4bc1-bee0-a705aec1d3d1" executionId="282bf44d-74e2-4726-a455-d8a1336c1780" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <TestEntries>
+        <TestEntry testId="3979764e-435d-ae48-cd6e-e26f96e1bf4b" executionId="f82503b4-afe2-4a8a-acf9-591e1339626f" parentExecutionId="282bf44d-74e2-4726-a455-d8a1336c1780" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="fb1f7323-2f64-468f-838a-471c8d63b9c5" executionId="7eff1d6f-e32a-4609-96b3-327a4a3109db" parentExecutionId="282bf44d-74e2-4726-a455-d8a1336c1780" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="3314af23-5568-8e41-fdc6-531833456d96" executionId="0051efb2-bff0-4661-ab8c-544695623f42" parentExecutionId="282bf44d-74e2-4726-a455-d8a1336c1780" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="14216afd-b447-844d-7c1d-a1dd2df50dc9" executionId="445f8022-08ff-4e99-a631-7367a2592243" parentExecutionId="282bf44d-74e2-4726-a455-d8a1336c1780" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="82f268de-a6dc-d5bf-2b02-3b08a009ef1d" executionId="6044257a-7921-46d0-bc6c-52096ec6f692" parentExecutionId="282bf44d-74e2-4726-a455-d8a1336c1780" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="57550a78-d69b-a3bc-0cd3-e85ab7cc935a" executionId="b6323a9c-0d6d-4fa1-a50c-dad219d2c24d" parentExecutionId="282bf44d-74e2-4726-a455-d8a1336c1780" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="66648f28-1324-d1c2-44a7-470ff11284cb" executionId="0c84efcc-68c4-4bbc-9722-329773c024d7" parentExecutionId="282bf44d-74e2-4726-a455-d8a1336c1780" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="501ae83f-aa8d-9076-a5fc-58ac47aeb249" executionId="363e9eff-dadd-4d80-a061-5371d103b60b" parentExecutionId="282bf44d-74e2-4726-a455-d8a1336c1780" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="46e03b91-5f56-8154-fcb8-66641916ba5c" executionId="4863d5d0-00fd-4ea1-818f-1f25fecf9035" parentExecutionId="282bf44d-74e2-4726-a455-d8a1336c1780" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="247870e5-0a6c-0c91-d605-7f2a3fa6b44e" executionId="44d7a09a-4a49-462f-b506-e9d7aec540ca" parentExecutionId="282bf44d-74e2-4726-a455-d8a1336c1780" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="f492940d-b111-6131-4f83-dac8e31903fa" executionId="9964e52f-6151-4ced-b7f8-6012a5cbf907" parentExecutionId="282bf44d-74e2-4726-a455-d8a1336c1780" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="67dab999-3a7e-e541-eae4-d06aa152f31d" executionId="e85b9b71-8ce7-4936-919a-6a8a2db2ce89" parentExecutionId="282bf44d-74e2-4726-a455-d8a1336c1780" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="e9b46095-a60a-2dab-c3c8-d0031636714c" executionId="7a485e14-ca38-45ed-8403-0abdf6f48e89" parentExecutionId="282bf44d-74e2-4726-a455-d8a1336c1780" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="70007e13-d477-e5be-1e22-cf1773616819" executionId="b0d4a103-74fe-4ee1-8143-ce64b77ad4c7" parentExecutionId="282bf44d-74e2-4726-a455-d8a1336c1780" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="96937f62-8550-51bb-56db-c3baa1b2e1ad" executionId="103196a0-b24e-4c63-bc6c-679cec640a79" parentExecutionId="282bf44d-74e2-4726-a455-d8a1336c1780" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="d25e173b-95a8-cf56-f3b9-88a3b5f47c17" executionId="5650012d-86a2-48c0-8cf0-46bb91f3d799" parentExecutionId="282bf44d-74e2-4726-a455-d8a1336c1780" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="9643daa3-75d2-452a-8831-d3465be7df41" executionId="6ce54a4b-4eb6-432d-adaf-169b6cd53821" parentExecutionId="282bf44d-74e2-4726-a455-d8a1336c1780" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="436915af-7688-78bf-28ee-3a67dbe268f9" executionId="0ea532c4-e4ca-4c2d-90d1-712265ea3637" parentExecutionId="282bf44d-74e2-4726-a455-d8a1336c1780" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+      </TestEntries>
+    </TestEntry>
+  </TestEntries>
+  <Results>
+    <LoadTestResult executionId="282bf44d-74e2-4726-a455-d8a1336c1780" testId="06126d46-43e8-4bc1-bee0-a705aec1d3d1" testName="LoadTest1" computerName="LESHA" duration="03:00:03.7414697" startTime="2016-04-28T18:41:50.6912692+03:00" endTime="2016-04-28T18:41:54.4327389+03:00" testType="fa4c85ff-1236-4463-b954-3ba2f0eabd95" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="282bf44d-74e2-4726-a455-d8a1336c1780" runId="1" controllerStartTime="2016-04-28T18:41:50.6912692+03:00" runStatus="Stopped" resultsStoreType="Database" resultsRepositoryConnectString="LAs4ogoKlDd+VpAl2ugknpXtkwYcrJ4K4xho6CJjXD1Qv6o/LM9aSaAM4Ac5r6Taj3snulskUGTQzbVVXe9oT7r6RKtPoK7hv4F5g28RXiKSn9lO+5p/Kw==" loadTestDuration="600" loadTestWarmupTime="60" previouslyViewed="false">
+      <Output>
+        <ErrorInfo>
+          <Message>Не удается выполнить нагрузочный тест "LoadTest1" на агенте "LESHA": Требуется эмуляция сети для нагрузочного теста "LoadTest1", но драйвер не установлен на агенте LESHA.</Message>
+        </ErrorInfo>
+      </Output>
+      <AnalyzerViewState>
+        <LoadTestRunDescriptor isLegendPanelVisible="true" isOverviewPanelVisible="true" isCounterPanelVisible="true" scrollingGraph="false" minMaxGraph="false" showHorizontalGridOnGraph="true" showThresholdsOnGraph="true" showComparison="false" showZoom="true" lockZoom="true" activeConsoleView="Graph" selectedGraphPanel1="Ключевые индикаторы" selectedGraphPanel2="Время ответа теста" selectedGraphPanel3="Тестируемая система" selectedGraphPanel4="Контроллер и агенты" graphPanelLayout="FourGrid" tablePanelLayout="TwoHorizontal" selectedTablePanel1="Tests" selectedTablePanel2="Errors" selectedTablePanel3="Thresholds" selectedTablePanel4="Transactions" controllerName="LESHA" isLocalRun="true" testRunId="19b925a3-425a-4b52-b246-4769b03cedad" repositoryRunId="0">
+          <GraphDescriptors>
+            <GraphDescriptor graphName="Ключевые индикаторы">
+              <HorizontalZoomRange lower="-1" upper="-1" />
+              <VerticalZoomRange lower="0" upper="100" />
+              <PlotDescriptors>
+                <PlotDescriptor colorArgb="-65536" lineStyle="0" fixedRange="0" rangeGroup="User Load" showOnGraph="true" isSelected="false">
+                  <CounterDescriptor machineName="LESHA" categoryName="LoadTest:Scenario" counterName="User Load" instanceName="_Total" baseInstanceName="_Total" loadTestItemId="-1" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-16744448" lineStyle="0" fixedRange="0" rangeGroup="Tests/Sec" showOnGraph="true" isSelected="false">
+                  <CounterDescriptor machineName="LESHA" categoryName="LoadTest:Test" counterName="Tests/Sec" instanceName="_Total" baseInstanceName="_Total" loadTestItemId="-1" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-16776961" lineStyle="0" fixedRange="0" rangeGroup="Avg. Test Time" showOnGraph="true" isSelected="false">
+                  <CounterDescriptor machineName="LESHA" categoryName="LoadTest:Test" counterName="Avg. Test Time" instanceName="_Total" baseInstanceName="_Total" loadTestItemId="-1" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-8388480" lineStyle="0" fixedRange="0" rangeGroup="Ошибок в секунду" showOnGraph="true" isSelected="false">
+                  <CounterDescriptor machineName="LESHA" categoryName="LoadTest:Errors" counterName="Ошибок в секунду" instanceName="_Total" baseInstanceName="_Total" loadTestItemId="-1" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-23296" lineStyle="0" fixedRange="0" rangeGroup="Нарушений порога/сек" showOnGraph="true" isSelected="false">
+                  <CounterDescriptor machineName="LESHA" categoryName="LoadTest:Errors" counterName="Нарушений порога/сек" instanceName="_Total" baseInstanceName="_Total" loadTestItemId="-1" />
+                </PlotDescriptor>
+              </PlotDescriptors>
+            </GraphDescriptor>
+            <GraphDescriptor graphName="Тестируемая система">
+              <HorizontalZoomRange lower="-1" upper="-1" />
+              <VerticalZoomRange lower="0" upper="100" />
+            </GraphDescriptor>
+            <GraphDescriptor graphName="Контроллер и агенты">
+              <HorizontalZoomRange lower="-1" upper="-1" />
+              <VerticalZoomRange lower="0" upper="100" />
+              <PlotDescriptors>
+                <PlotDescriptor colorArgb="-65536" lineStyle="0" fixedRange="100" rangeGroup="% Processor Time" showOnGraph="true" isSelected="false">
+                  <CounterDescriptor machineName="LESHA" categoryName="Processor" counterName="% Processor Time" instanceName="0" baseInstanceName="0" loadTestItemId="-1" />
+                </PlotDescriptor>
+                <PlotDescriptor colorArgb="-16744448" lineStyle="0" fixedRange="0" rangeGroup="Memory Bytes" showOnGraph="true" isSelected="false">
+                  <CounterDescriptor machineName="LESHA" categoryName="Memory" counterName="Available MBytes" instanceName="systemdiagnosticsperfcounterlibsingleinstance" baseInstanceName="systemdiagnosticsperfcounterlibsingleinstance" loadTestItemId="-1" />
+                </PlotDescriptor>
+              </PlotDescriptors>
+            </GraphDescriptor>
+            <GraphDescriptor graphName="Время ответа теста">
+              <HorizontalZoomRange lower="-1" upper="-1" />
+              <VerticalZoomRange lower="0" upper="100" />
+            </GraphDescriptor>
+            <GraphDescriptor graphName="Время ответа транзакции">
+              <HorizontalZoomRange lower="-1" upper="-1" />
+              <VerticalZoomRange lower="0" upper="100" />
+            </GraphDescriptor>
+          </GraphDescriptors>
+        </LoadTestRunDescriptor>
+      </AnalyzerViewState>
+    </LoadTestResult>
+  </Results>
+</TestRun>

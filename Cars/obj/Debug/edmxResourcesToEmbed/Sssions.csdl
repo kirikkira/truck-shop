@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Session" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="CARSEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Sessions" EntityType="Session.Sessions" />
+  </EntityContainer>
+  <EntityType Name="Sessions">
+    <Key>
+      <PropertyRef Name="SessionId" />
+    </Key>
+    <Property Name="SessionId" Type="String" Nullable="false" MaxLength="24" Unicode="false" FixedLength="false" />
+    <Property Name="Created" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Expires" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="LockDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="LockId" Type="Int32" Nullable="false" />
+    <Property Name="Locked" Type="Boolean" Nullable="false" />
+    <Property Name="ItemContent" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+  </EntityType>
+</Schema>

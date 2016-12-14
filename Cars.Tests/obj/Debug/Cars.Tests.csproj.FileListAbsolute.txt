@@ -1,0 +1,1 @@
+P:\Cars\Cars.Tests\obj\Debug\Cars.Tests.csprojResolveAssemblyReference.cache
