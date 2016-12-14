@@ -1,0 +1,173 @@
+﻿@{
+    ViewBag.Title = "AddOrder";
+}
+@using Cars.Models
+@model OrderView
+@section featured{
+    <div id="AddProduct">
+        <div class="content" id="order">
+            <div class="panel-input">
+                <div class="label-for">
+                    @Html.LabelFor(a => a.typeCars)
+                </div>
+                @Html.DropDownListFor(a => a.typeCars, Model.typeCars ,htmlAttributes: new {@class = "select-admin"})
+                @Html.ValidationMessageFor(a=>a.typeCars)
+            </div>
+            <div class="panel-input">
+                <div class="label-for">
+                    @Html.LabelFor(a => a.maker)
+                </div>
+                @Html.DropDownListFor(a => a.maker, (IEnumerable<SelectListItem>) new List<SelectListItem>(), htmlAttributes: new {@class = "select-admin"})
+                @Html.ValidationMessageFor(a=>a.maker)
+            </div>
+            <div class="panel-input">
+                <div class="label-for">
+                    @Html.LabelFor(a => a.model)
+                </div>
+                @Html.DropDownListFor(a => a.model, (IEnumerable<SelectListItem>) new List<SelectListItem>(), htmlAttributes: new {@class = "select-admin"})
+                @Html.ValidationMessageFor(a=>a.model)
+            </div>
+            <div class="panel-input">
+                <div class="label-for">
+                    @Html.LabelFor(a => a.typeCabin)
+                </div>
+                @Html.DropDownListFor(a => a.typeCabin, (IEnumerable<SelectListItem>) new List<SelectListItem>(), htmlAttributes: new {@class = "select-admin"})
+                @Html.ValidationMessageFor(a=>a.typeCabin)
+            </div>
+            <div class="panel-input">
+                <div class="label-for">
+                    @Html.LabelFor(a => a.vEngine)
+                </div>
+                @Html.DropDownListFor(a => a.vEngine, (IEnumerable<SelectListItem>) new List<SelectListItem>(), htmlAttributes: new {@class = "select-admin"})
+                @Html.ValidationMessageFor(a => a.vEngine)
+            </div>
+            <div class="panel-input">
+                <div class="label-for">
+                    @Html.LabelFor(a => a.typeTransmission)
+                </div>
+                @Html.DropDownListFor(a => a.typeTransmission, (IEnumerable<SelectListItem>) new List<SelectListItem>(), htmlAttributes: new {@class = "select-admin"})
+                @Html.ValidationMessageFor(a=>a.typeTransmission)
+            </div>
+            <div class="panel-input">
+                <div class="label-for">
+                    @Html.LabelFor(a => a.countTransmission)
+                </div>
+                @Html.DropDownListFor(a => a.countTransmission, (IEnumerable<SelectListItem>) new List<SelectListItem>(), htmlAttributes: new {@class = "select-admin"})
+                @Html.ValidationMessageFor(a=>a.countTransmission)
+            </div>
+            <div class="panel-input">
+                <div class="label-for">
+                    @Html.LabelFor(a => a.typeFuel)
+                </div>
+                @Html.DropDownListFor(a => a.typeFuel, (IEnumerable<SelectListItem>) new List<SelectListItem>(), htmlAttributes: new {@class = "select-admin"})
+                @Html.ValidationMessageFor(a=>a.typeFuel)
+            </div>
+            <div class="panel-input">
+                <div class="label-for">
+                    @Html.LabelFor(a => a.chassis)
+                </div>
+                @Html.DropDownListFor(a => a.chassis, (IEnumerable<SelectListItem>) new List<SelectListItem>(), htmlAttributes: new {@class = "select-admin"})
+                @Html.ValidationMessageFor(a=>a.chassis)
+            </div>
+            <div class="panel-input">
+                <div class="label-for">
+                    @Html.LabelFor(a => a.yearCreation)
+                </div>
+                @Html.DropDownListFor(a => a.yearCreation, (IEnumerable<SelectListItem>) new List<SelectListItem>(), htmlAttributes: new {@class = "select-admin"})
+                @Html.ValidationMessageFor(a => a.yearCreation)
+            </div>
+            <div class="panel-input">
+                <div class="label-for">
+                    @Html.LabelFor(a => a.price)
+                </div>
+                @Html.TextBoxFor(a => a.price, htmlAttributes: new {@class = "default", @disabled="disabled"})
+                @Html.ValidationMessageFor(a=>a.price)
+            </div>
+        </div>
+    </div>
+}
+
+@section scripts{
+    <script type="text/javascript">
+
+        $(function() {
+            $("#typeCars").change(function() {
+                // получаем выбранный id
+                var type = $(this).val();
+                $.ajax({
+                    type: 'GET',
+                    url: '@Url.Action("GetMakerOnType")',
+                    data: { type: type },
+                    success: function(data) {
+                        // заменяем содержимое присланным частичным представлением
+                        $("#maker").replaceWith(data);
+                    }
+                });
+            });
+        });
+
+        function makerClick() {
+                // получаем выбранный id
+                var mak = $("#maker").val();
+                var tp = $("#typeCars").val();
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("GetModelOnMaker")',
+                    data: { maker: mak, type: tp },
+                    success: function(data) {
+                        // заменяем содержимое присланным частичным представлением
+                        $("#model").replaceWith(data);
+                    }
+            });
+        };
+
+        function modelClick() {
+                // получаем выбранный id
+                var mak = $("#maker").val();
+                var mod = $("#model").val();
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("GetCabinOnModel")',
+                    data: { maker: mak, model: mod },
+                    success: function(data) {
+                        // заменяем содержимое присланным частичным представлением
+                        $("#typeCabin").replaceWith(data);
+                    }
+                });
+        };
+
+        function cabinClick() {
+            // получаем выбранный id
+            var mak = $("#maker").val();
+            var mod = $("#model").val();
+            var cab = $("#typeCabin").val();
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("GetVEngOnCabin")',
+                data: { maker: mak, model: mod, cabin: cab },
+                success: function(data) {
+                    // заменяем содержимое присланным частичным представлением
+                    $("#vEngine").replaceWith(data);
+                }
+            });
+        };
+
+        function vEngClick() {
+            // получаем выбранный id
+            var mak = $("#maker").val();
+            var mod = $("#model").val();
+            var cab = $("#typeCabin").val();
+            var v = $("#vEngine").val();
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("GetVEngOnCabin")',
+                data: { maker: mak, model: mod, cabin: cab, vEng: v },
+                success: function (data) {
+                    // заменяем содержимое присланным частичным представлением
+                    $("#typeTransmission").replaceWith(data);
+                }
+            });
+        };
+
+    </script>
+}
